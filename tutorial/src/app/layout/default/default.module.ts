@@ -1,3 +1,4 @@
+import { SharedModule } from './../../shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { PostsComponent } from './../../components/posts/posts.component';
 import { HomeComponent } from './../../components/home/home.component';
@@ -17,7 +18,8 @@ import {FlexLayoutModule} from '@angular/flex-layout';
   imports: [
     CommonModule,
     RouterModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    SharedModule
   ]
 })
 export class DefaultModule { }
